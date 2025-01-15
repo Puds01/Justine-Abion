@@ -4,22 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="images/icon.png" sizes="48x48" type="images/icon.png">
+    <link rel="icon" href="images/icon.png" sizes="48x48" type="../images/icon.png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Justine Abion</title>
 </head>
 <body>
-    <header>
-        <div class="logo">My Website</div>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="menu-toggle">&#9776;</div>
-    </header>
     
+    <header class="header">
+        <a href="#" class="logo">J. Abion</a>
+        
+        <nav class="nav">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#">Portfolio</a>
+            <a href="#">Skills</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <section class="home" id="home">
+        <div class="image-container">
+            <img src="images/Abion.jpg" alt="Abion" class="home-img">
+        </div>
+        <div class="home-content">
+            <h1>Justine Abion</h1>
+            <h3>Student | Web Developer</h3>
+            <div class="btn-box">
+                <a href="#about">About me</a>
+            </div>
+        </div>
+        <div class="home-sci">
+            <a href="https://www.facebook.com/justinekarl.abion"><i class='bx bxl-facebook'></i></a>
+            <a href="https://www.youtube.com/channel/UCeL9OIkVmswRi3RZJLxwtsQ"><i class='bx bxl-youtube'></i></a>
+            <a href="https://github.com/Puds01"><i class='bx bxl-github'></i></a>
+        </div>
+    </section> 
+    
+    <section class="about" id="about">
+        <div class="about-content">
+            <h2>ABOUT ME</h2><br>
+            <div class="line2"></div>
+            <p>My name is Justine Karl S. Abion. I am currently a 3rd year IT Student in City of Malabon University. My Career Goals are still blurry up ahead but will still pursue the path of a developer. Either it be software or web development. I am passionate about programming because I find logic and problem solving quite difficult but it stages the fun part.
+            </p>
+            <div class="line3"></div>
+            <h3>Learning:</h3>
+            <p class="p2">HTML, CSS, MySQL, PHP, JavaScript, React, Node.js, Troubleshooting
+            </p>
+        </div>
+        <div class="pic">
+            <img src="images/1x1.png" alt="1x1 Pic">
+        </div>
+    </section>
+
+    <div class="return">
+        <a href="#home"><i class='bx bx-chevrons-up'></i></a>
+    </div>
+            
 </body>
 </html>
