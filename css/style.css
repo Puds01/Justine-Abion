@@ -6,15 +6,6 @@ body {
   line-height: 1.6;
 }
 
-a {
-  color: #1e90ff;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
 .container {
   max-width: 800px;
   margin: 0 auto;
@@ -30,7 +21,28 @@ a:hover {
   width: 120px;
   height: 120px;
   border-radius: 50%;
-  border: 3px solid #1e90ff;
+  border: 3px solid #313c47;
+}
+
+.btn-social a {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  display: inline-flex;
+  width: 28px;
+  height: 28px;
+  background: transparent;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  overflow: hidden;
+  z-index: 1;
+  transition: .5s;
+  padding: 3px 3px;
+}
+
+.btn-social a:hover {
+  color: #bbbbbb;
 }
 
 .profile h1 {
@@ -44,10 +56,12 @@ a:hover {
 
 .section {
   margin-bottom: 40px;
+  color: white;
+  text-decoration: none;
 }
 
 .section h2 {
-  border-bottom: 2px solid #1e90ff;
+  border-bottom: 2px solid #313c47;
   display: inline-block;
   padding-bottom: 5px;
   margin-bottom: 20px;
@@ -56,6 +70,7 @@ a:hover {
 .section ul {
   list-style: none;
   padding: 0;
+  text-decoration: none;
 }
 
 .section li {
@@ -64,16 +79,76 @@ a:hover {
   padding: 15px;
   border-radius: 8px;
   transition: transform 0.3s ease, background-color 0.3s ease;
+  text-decoration: none;
 }
 
-.section li:hover {
+.projects a {
+  text-decoration: none;
+  color: white;
+}
+
+.projects li:hover {
   transform: translateY(-5px);
-  background-color: #1e90ff;
+  background-color: #313c47;
   color: #ffffff;
+}
+
+.work {
+  margin-top: 20px;
+  border-top: 2px solid #313c47;
+  margin-left: 100px;
+  margin-right: 100px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.pokemon {
+
+  height: 500px;
+  width: 500px;
+}
+
+.capstone {
+  height: 500px;
+  width: 500px;
+}
+
+.tindog {
+  height: 500px;
+  width: 500px;
+}
+
+.work h2 {
+  border-bottom: 2px solid #313c47;
+  display: inline-block;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+}
+.work img {
+  display: flex;
+  height: 300px;
+  width: 100%;
 }
 
 .footer {
   text-align: center;
   margin-top: 40px;
   font-size: 0.9rem;
+}
+
+@media (max-width: 720px) {
+
+  .work {
+    width: 100%;
+    display: block;
+    justify-content: center;
+    border-top: 0px;
+  }
+
+  .work img {
+    width: 100%;
+    display: inline;
+    object-fit: cover;
+  }
 }
