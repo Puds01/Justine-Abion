@@ -111,11 +111,9 @@ body {
 }
 
 .section {
-  display: ;
   margin-bottom: 40px;
   color: white;
   text-decoration: none;
-  justify-content: center;
 }
 
  .html {
@@ -147,6 +145,7 @@ body {
 
 
 .section h2 {
+  width: 100%;
   font-size: 20px;
   border-bottom: 2px solid #313c47;
   display: inline-block;
@@ -181,6 +180,7 @@ body {
 }
 
 .section2 h2 {
+  width: 100%;
   font-size: 20px;
   border-bottom: 2px solid #313c47;
   display: inline-block;
